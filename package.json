@@ -1,0 +1,31 @@
+{
+  "name": "atm",
+  "version": "1.0.0",
+  "description": "Enhanced ATM application with animated welcome message and emoji-based prompts for a fun and engaging user experience, allowing users to perform transactions including withdrawal, deposit, and balance inquiry, with an option to print receipts",
+  "main": "index.js",
+  "type": "module",
+  "bin": "atm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.7.0",
+    "from": "^0.1.7",
+    "import": "^0.0.6",
+    "inquirer": "^9.2.16",
+    "m6ra22-simple-calculator": "^2.0.1",
+    "moment": "^2.30.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
+    "@types/figlet": "^1.5.8",
+    "@types/gradient-string": "^1.1.5",
+    "@types/inquirer": "^9.0.7",
+    "@types/uuid": "^9.0.8"
+  }
+}

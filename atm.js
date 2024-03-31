@@ -1,8 +1,9 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 import animation from "chalk-animation";
-import moment from 'moment';
-import { v4 as uuidv4 } from 'uuid';
+import moment from "moment";
+import { v4 as uuidv4 } from "uuid";
 let myBalance = 10000;
 let mypin = 1234;
 async function main() {
@@ -28,7 +29,12 @@ async function main() {
                 message: "What do you want ",
                 name: "operation",
                 type: "list",
-                choices: ["💸 Withdraw", "💰 Check Balance", "💸 Fast Cash", "💳 Deposit Money"],
+                choices: [
+                    "💸 Withdraw",
+                    "💰 Check Balance",
+                    "💸 Fast Cash",
+                    "💳 Deposit Money",
+                ],
             });
             if (operationans.operation === "💸 Withdraw") {
                 let withdraw = await inquirer.prompt({
@@ -102,7 +108,7 @@ async function main() {
 }
 function generateTransactionId() {
     const uuid = uuidv4(); // Generate UUID
-    const transactionId = uuid.replace(/-/g, '').substring(0, 9); // Remove dashes and take the first 9 characters
+    const transactionId = uuid.replace(/-/g, "").substring(0, 9); // Remove dashes and take the first 9 characters
     return transactionId;
 }
 async function askForReceipt(withdrawAmt, remainingBalance, transactionType) {
@@ -141,8 +147,8 @@ function printReceiptMessage(withdrawAmt, remainingBalance, transactionType) {
                                                     
                         ATM Receipt                        
                                                       
-          Date: ${now.format('MMMM D, YYYY')}                       
-          Time: ${now.format('h:mm A')}                              
+          Date: ${now.format("MMMM D, YYYY")}                       
+          Time: ${now.format("h:mm A")}                              
           Transaction ID: ${generateTransactionId()}               
                                                       
           ${transactionDescription} Amount: ${withdrawAmt}                     

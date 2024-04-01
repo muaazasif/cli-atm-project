@@ -19,7 +19,7 @@ async function main() {
     let continueOperation = true;
     while (continueOperation) {
         let answer = await inquirer.prompt({
-            message: "Enter Your Pin ",
+            message: "Enter Your Pin (Hint:1234)",
             name: "pin",
             type: "number",
         });

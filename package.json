@@ -1,6 +1,6 @@
 {
   "name": "cli-atm-p1",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Enhanced ATM application with animated welcome message and emoji-based prompts for a fun and engaging user experience, allowing users to perform transactions including withdrawal, deposit, and balance inquiry, with an option to print receipts",
   "main": "index.js",
   "type": "module",

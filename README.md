@@ -11,6 +11,8 @@ Once Node.js is installed, you can install the ATM CLI globally using npm:
 Usage
 Ready to take control of your finances? Let's dive in and start managing your money with the following command in your terminal:
 
+Pin Code:1234
+
 ```bash
 npx cli-atm-p1
 
